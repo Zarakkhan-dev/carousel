@@ -1,0 +1,83 @@
+.carousel {
+  margin: -68px;
+  height: 100vh;
+}
+.image{
+  position: absolute;
+  width: 100%;
+  bottom:0% ;
+  right: 0%;
+}
+.image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  filter: blur(4px);
+}
+.gallery  img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 20px;
+  }
+.Image-gallery{
+    border-radius: 20px;
+    box-shadow: -1px 0px 14px 0px rgba(226,110,11,0.75);
+    -webkit-box-shadow: -1px 0px 14px 0px rgba(226,110,11,0.75);
+    -moz-box-shadow: -1px 0px 14px 0px rgba(226,110,11,0.75);
+  }
+.contant {
+  position: absolute;
+  top: 13%;
+  left: 0%;
+  color: white;
+  width: 1200px;
+  max-width: 60%;
+  padding: 8vh 10vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.active_content{
+  animation: activecontent .4s 0.2s  linear 1 forwards ;
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+}
+@keyframes activecontent {
+  from{
+      transform: translateY(25px);
+      filter: blur(10px);
+      opacity: 0.5;
+  }
+  to{
+      transform: translateY(0px);
+      filter: blur(0px);
+      opacity: 1;
+  }
+  
+}
+.active img{
+  width: 100%;
+  height: 100%;
+}
+.active {
+  animation: imgsize .3s  0.1s linear 1 forwards;
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  bottom: 75px;
+  right: 590px;
+}
+@keyframes imgsize {
+ to{
+  width: 100%;
+  height: 100vh;
+  bottom: 0%;
+  right: 0%;
+ }
+} 
+
+
